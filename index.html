@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-touch-fullscreen" content="yes"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="msapplication-tap-highlight" content="no"/>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no"/>
+    <title>配对记忆测验</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="jquery/jquery-2.1.3.js"></script>
+
+</head>
+<body id="main">
+<div class="srceen1 show" id="screen1" style="display: block">
+    <div class="main-box">
+        <div class="img-box logo"><img src="img/logo.png"/></div>
+        <div class="img-box explain"><img src="img/shouye.png"/></div>
+        <div class="botton"><img src="img/peiduijiyi_btn_jinruceyan.png" id="goscreen2"/></div>
+    </div>
+</div>
+<div class="srceen1" id="screen2">
+    <div class="main-box">
+        <div class="img-box explain explainT"><img src="img/peiduijiyi_jc_w.png"/></div>
+        <div class="botton"><img src="img/peiduijiyi_btn_kaishilianxi.png" id="goscreen3"/></div>
+    </div>
+</div>
+<div class="srceen1" id="screen3">
+    <div class="top">
+        <div class="time"><p class="time-num"><span id="testTime">10</span>秒</p><img src="img/daojishi.png"/></div>
+    </div>
+    <div class="img-box text1"><img src="img/peiduijiyi_lj_w.png"></div>
+
+    <div class="modelA">
+        <ul class="shape-list">
+            <li>
+                <p class="shape"><img src="img/seat.png" data-role="subject"/></p>
+                <p class="shape-line"><img src="img/shapeLine.png"/></p>
+                <p class="shape"><img src="img/seat.png" data-role="answer"/></p>
+            </li>
+            <li>
+                <p class="shape"><img src="img/seat.png" data-role="subject"/></p>
+                <p class="shape-line"><img src="img/shapeLine.png"/></p>
+                <p class="shape"><img src="img/seat.png" data-role="answer"/></p>
+
+            </li>
+        </ul>
+    </div>
+
+</div>
+<div class="srceen1" id="screen4">
+    <div class="top">
+    </div>
+    <div class="img-box text1"><img src="img/peiduijiyi_ld_w.png"></div>
+    <div class="matrix">
+        <ul class="matrixA" data-role="leaveBox">
+            <li><p class="matrix-shape"><img src="img/seat.png" data-role="subjectImg"/></p>
+                <p class="matrix-shape shapebg2"><img src="img/seat.png" data-role="leaveImg"/></p>
+                <span class="result"><img src="img/seat.png"/></span></li>
+            <li><p class="matrix-shape"><img src="img/seat.png" data-role="subjectImg"/></p>
+                <p class="matrix-shape shapebg2 "><img src="img/seat.png" data-role="leaveImg"/></p>
+                <span class="result"><img src="img/seat.png"/></span></li>
+
+        </ul>
+        <ul class="matrixBotA" data-role="moveBox">
+            <li class="img-box"><img src="img/seat.png" data-role="moveImg"/></li>
+            <li class="img-box"><img src="img/seat.png" data-role="moveImg"/></li>
+            <li class="img-box"><img src="img/seat.png" data-role="moveImg"/></li>
+            <li class="img-box"><img src="img/seat.png" data-role="moveImg"/></li>
+        </ul>
+    </div>
+    <div class="bottom-btn img-box"><img src="img/stepDis.png" id="goscreen10"/></div>
+
+</div>
+<div class="srceen1" id="screen5">
+    <div class="top">
+        <div class="time"><p class="time-num"><span id="curTime">30</span>秒</p><img src="img/daojishi.png"/></div>
+    </div>
+    <div class="img-box text1"><img src="img/peiduijiyi_lj_w.png"></div>
+    <div class="matrix">
+        <div class="modelB">
+            <ul class="shape-list">
+                <li>
+                    <p class="shape"><img src="img/seat.png" data-role="subject"/></p>
+                    <p class="shape-line"><img src="img/shapeLine.png"/></p>
+                    <p class="shape"><img src="img/seat.png" data-role="answer"/></p>
+                </li>
+                <li>
+                    <p class="shape"><img src="img/seat.png" data-role="subject"/></p>
+                    <p class="shape-line"><img src="img/shapeLine.png"/></p>
+                    <p class="shape"><img src="img/seat.png" data-role="answer"/></p>
+                </li>
+                <li>
+                    <p class="shape"><img src="img/seat.png" data-role="subject"/></p>
+                    <p class="shape-line"><img src="img/shapeLine.png"/></p>
+                    <p class="shape"><img src="img/seat.png" data-role="answer"/></p>
+                </li>
+                <li>
+                    <p class="shape"><img src="img/seat.png" data-role="subject"/></p>
+                    <p class="shape-line"><img src="img/shapeLine.png"/></p>
+                    <p class="shape"><img src="img/seat.png" data-role="answer"/></p>
+                </li>
+                <li>
+                    <p class="shape"><img src="img/seat.png" data-role="subject"/></p>
+                    <p class="shape-line"><img src="img/shapeLine.png"/></p>
+                    <p class="shape"><img src="img/seat.png" data-role="answer"/></p>
+                </li>
+                <li>
+                    <p class="shape"><img src="img/seat.png" data-role="subject"/></p>
+                    <p class="shape-line"><img src="img/shapeLine.png"/></p>
+                    <p class="shape"><img src="img/seat.png" data-role="answer"/></p>
+                </li>
+            </ul>
+
+
+        </div>
+    </div>
+</div>
+<div class="srceen1" id="screen6">
+    <div class="top">
+        <div class="time"><p class="time-num"><span id="ansTime">30</span>秒</p><img src="img/daojishi.png"/></div>
+    </div>
+    <div class="img-box text1"><img src="img/peiduijiyi_ld_w.png"></div>
+    <div class="matrix">
+        <ul class="matrixB" data-role="leaveBox">
+            <li><p class="matrix-shape"><img src="img/seat.png" data-role="subjectImg"/></p>
+                <p class="matrix-shape shapebg2"><img src="img/seat.png" data-role="leaveImg"/></p>
+            </li>
+            <li><p class="matrix-shape"><img src="img/seat.png" data-role="subjectImg"/></p>
+                <p class="matrix-shape shapebg2"><img src="img/seat.png" data-role="leaveImg"/></p>
+            </li>
+            <li><p class="matrix-shape"><img src="img/seat.png" data-role="subjectImg"/></p>
+                <p class="matrix-shape shapebg2"><img src="img/seat.png" data-role="leaveImg"/></p>
+            </li>
+            <li><p class="matrix-shape"><img src="img/seat.png" data-role="subjectImg"/></p>
+                <p class="matrix-shape shapebg2"><img src="img/seat.png" data-role="leaveImg"/></p>
+            </li>
+        </ul>
+        <ul class="matrixBotB" data-role="moveBox">
+            <li class="img-box"><img src="img/seat.png" data-role="moveImg"/></li>
+            <li class="img-box"><img src="img/seat.png" data-role="moveImg"/></li>
+            <li class="img-box"><img src="img/seat.png" data-role="moveImg"/></li>
+            <li class="img-box"><img src="img/seat.png" data-role="moveImg"/></li>
+            <li class="img-box"><img src="img/seat.png" data-role="moveImg"/></li>
+            <li class="img-box"><img src="img/seat.png" data-role="moveImg"/></li>
+        </ul>
+    </div>
+
+</div>
+<div class="pop" id="tipPop">
+    <div class="img-box pop-con">
+
+        <img src="img/popBg.png"/>
+        <div class="pop-btn">
+            <img src="img/queren.png" id="sure"/><img src="img/fanhui.png" id="cancel"/></div>
+    </div>
+
+</div>
+<div class="srceen1" id="screen7">
+    <div class="stop img-box">
+
+        <img src="img/stop.png" id="stop"/></div>
+    <div class="main-box">
+        <div class="img-box explain explainS"><img src="img/peiduijiyi_dj_w.png"/></div>
+        <div class="timeBig">
+            <img src="img/daojishiB.png"/>
+            <div class="timeCon"><span id="suspend">300</span>秒</div>
+        </div>
+        <div class="botton"><img src="img/continueD.png" id="continueAns" data-role="continueAns"/></div>
+    </div>
+</div>
+<div class="srceen1" id="screen8" style="display:none">
+    <div class="main-box">
+        <div class="img-box explain explainT"><img src="img/over.png"/>
+            <div id="uesTime" class="result result1"></div>
+            <div id="score" class="result result2"></div>
+        </div>
+        <div class="botton"><img src="img/btn_tuichu.png" data-role="close" onclick="history.go(-1)"/></div>
+    </div>
+</div>
+
+<div class="srceen1" id="screen9">
+    <div class="main-box">
+        <div class="img-box explain explainT"><img src="img/peiduijiyi_jc_w.png"/></div>
+        <div class="botton"><img src="img/peiduijiyi_btn_jinruceyan.png" id="startTwo"/></div>
+    </div>
+</div>
+
+<div class="srceen1" id="screen10">
+    <div class="main-box">
+        <div class="img-box explain explainT"><img src="img/peiduijiyi_jc_w.png"/></div>
+        <div class="botton"><img src="img/peiduijiyi_btn_kaishiceyan.png" id="goscreen5"/></div>
+    </div>
+</div>
+
+
+<div class="srceen srceen1" id="screenStop">
+    <div class="main-box">
+        <div class="img-box logo"><img src="img/logo.png"/></div>
+        <div class="img-box explain"><img src="img/peiduijiyi_stop_w.png"/></div>
+        <div class="botton bottons"><img src="img/btn_tuichu.png" id="signOut"/> <img src="img/continue.png"
+                                                                               id="continue"/></div>
+    </div>
+</div>
+<script src="jquery/jquery.game.js"></script>
+
+</body>
+</html>
